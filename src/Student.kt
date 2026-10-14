@@ -5,6 +5,7 @@ class Student(
     val mark: Double
 ) {
 
+
     fun getGrade(): String {
         return when {
             mark >= 70 -> "First"

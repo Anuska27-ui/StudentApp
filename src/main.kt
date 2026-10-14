@@ -2,7 +2,7 @@ fun main() {
     val students = mutableListOf<Student>()
 
     while (true) {
-        println("Enter student ID (or 'quit' to exit):")
+        print("Enter student ID (or 'quit' to exit): ")
         val input = readln()
 
         if (input.lowercase() == "quit") {
@@ -12,7 +12,7 @@ fun main() {
         val id = input.toIntOrNull()
 
         if (id == null) {
-            println("Invalid ID. Please enter a number.")
+            println("Invalid ID.")
             continue
         }
 
@@ -40,7 +40,12 @@ fun main() {
     println("Student Records:")
 
     for (student in students) {
-        println(student)
+        println("ID: ${student.id}")
+        println("Name: ${student.name}")
+        println("Course: ${student.course}")
+        println("Mark: ${student.mark}")
         println("Grade: ${student.getGrade()}")
+        println("Passed: ${student.didPass()}")
+        println()
     }
 }
