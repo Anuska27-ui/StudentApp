@@ -41,5 +41,6 @@ fun main() {
 
     for (student in students) {
         println(student)
+        println("Grade: ${student.getGrade()}")
     }
 }
