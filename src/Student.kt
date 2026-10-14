@@ -15,6 +15,10 @@ class Student(
         }
     }
 
+    fun didPass(): Boolean {
+        return mark >= 40
+    }
+
     override fun toString(): String {
         return "ID: $id, Name: $name, Course: $course, Mark: $mark"
     }
