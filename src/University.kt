@@ -1,7 +1,7 @@
-class University(
-    private val modules: MutableList<Module>,
-    private val students: MutableList<Student>
-) {
+class University {
+    private val modules = mutableListOf<Module>()
+    private val students = mutableListOf<Student>()
+
     fun findStudentById(id: String): Student? {
         for (student in students) {
             if (student.id == id) {
@@ -27,3 +27,4 @@ class University(
         return matchingStudents
     }
 }
+

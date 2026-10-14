@@ -1,5 +1,5 @@
 fun main() {
-    val university = University(mutableListOf(), mutableListOf())
+    val university = University()
 
     var choice = ""
 
